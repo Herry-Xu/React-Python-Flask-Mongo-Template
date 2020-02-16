@@ -1,0 +1,1 @@
+'''Returns argument a is squared.'''
