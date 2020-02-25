@@ -1,6 +1,10 @@
 from app.repository import Repository
 from app.repository.mongo import MongoRepository
 from app.kudo.schema import KudoSchema
+import logging
+
+LOG_FILENAME = 'example.log'
+logging.basicConfig(filename=LOG_FILENAME, level=logging.DEBUG)
 
 class Service(object):
  def __init__(self, user_id, repo_client=Repository(adapter=MongoRepository)):
